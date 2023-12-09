@@ -1,6 +1,6 @@
 <?php
-
-$db = mysqli_connect('localhost', 'root', 'root', 'benpp');
+require 'credenciales.php';
+$db = mysqli_connect($HOST,$USR,$PASS,$BBDD);
 
 if(!$db) {
     echo "Hubo un error";
